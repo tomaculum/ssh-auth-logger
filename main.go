@@ -106,8 +106,9 @@ func getKey(host string) (*rsa.PrivateKey, error) {
 }
 
 var serverVersions = []string{
-	"SSH-2.0-OpenSSH_6.0p1",
-	"SSH-2.0-OpenSSH_5.3",
+	"SSH-2.0-OpenSSH_6.6.1",
+        "SSH-2.0-OpenSSH_6.2p2 Ubuntu-6ubuntu0.1",
+        "SSH-2.0-OpenSSH_7.7",
 }
 
 func getServerVersion(host string) string {
