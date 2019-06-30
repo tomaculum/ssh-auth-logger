@@ -158,7 +158,7 @@ func getEnvWithDefault(key, fallback string) string {
 }
 
 func init() {
-	logrus.SetFormatter(&logrus.JSONFormatter{})
+	logrus.SetFormatter(&logrus.JSONFormatter{PrettyPrint:      true})
 
 	sshd_bind = getEnvWithDefault("SSHD_BIND", ":22")
 	sshd_key_key = getEnvWithDefault("SSHD_KEY_KEY", "Take me to your leader")
